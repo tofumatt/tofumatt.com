@@ -1,0 +1,184 @@
+/***** Reset Stuff *****/
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/*	Leave browsers to their own focus for this site.
+:focus {
+	outline: 0;
+}
+*/
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-size: 0.625em; /* Sets 1em = 10px; optional */
+}
+
+ol, ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Remember cellspacing="0" because CSS+Tables=Fail */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+/*** Page Styles ***/
+
+* {
+	color: black !important;
+}
+
+body {
+	background: none;
+	font-family: Times, "Times New Roman", serif;
+	font-size: 13pt;
+	line-height: 1.3em;
+	margin: 0 25pt 0;
+}
+
+a {
+	border-bottom: 1px dashed;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	background: #fff;
+	border-bottom: 1px solid;
+}
+
+a:active {
+	border-bottom: none;
+}
+
+.print-hide {
+	display: none;
+}
+
+.print-break-before {
+	page-break-before: always;
+}
+
+.print-break-after {
+	page-break-after: always;
+}
+
+.print-negative-margin {
+	margin-top: -3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	font-weight: bold;
+	margin: 1em auto .5em;
+	text-align: center;
+}
+
+h3, h4 {
+	text-align: left;
+}
+
+h1 {
+	font-size: 20pt;
+	margin: 1.5em 0 1em;
+}
+
+h2 {
+	background: #ccc;
+	font-size: 25pt;
+	padding: .1em;
+}
+
+h3 {
+	border-bottom: 1pt solid black;
+	font-size: 18pt;
+}
+
+h4 {
+	font-size: 16pt;
+	margin: .75em 0;
+}
+
+em {
+	font-style: italic;
+}
+	
+	em.underline {
+		font-style: normal;
+	}
+
+strong {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+p {
+	margin: .5em;
+}
+
+ul, ol {
+	display: block;
+	padding: 0 0 1em;
+}
+
+ul.indent, ol.indent {
+	display: block;
+	line-height: 1.2em;
+	margin: 0 6em 0 4em;
+}
+
+ul li {
+	display: list-item;
+	list-style: square outside;
+	margin: .75em .25em;
+	text-align: left;
+}
+
+ul.no-bullets li {
+	list-style: none;
+	padding: 0;
+}
+
+span.ampersand {
+	font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+	font-style: italic;
+}
+
+.grouping {
+	display: block;
+	margin: 0 30pt 0 10pt;
+}
+
+#intro-text, #the-short-version {
+	line-height: 1.6em;
+}

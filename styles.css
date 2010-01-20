@@ -1,0 +1,231 @@
+/***** Reset Stuff *****/
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/*	Leave browsers to their own focus for this site.
+:focus {
+	outline: 0;
+}
+*/
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-size: 0.625em; /* Sets 1em = 10px; optional */
+}
+
+ol, ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Remember cellspacing="0" because CSS+Tables=Fail */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+small {
+	font-size: .8em;
+}
+
+/*** Page Styles ***/
+
+body {
+	background: #538cc1 url(tomato-cutout.png) bottom right no-repeat fixed;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-size: .9em;
+}
+
+a {
+	border-bottom: 1px dashed;
+	color: #c12424;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a.active {
+	background: url(page-bg.png) repeat;
+	border-bottom: 1px solid;
+}
+
+a:active {
+	background: white;
+	border-top: none;
+	border-bottom: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: "Hoefler Text", Times, "Times New Roman", serif;
+	font-weight: normal;
+	text-align: right;
+}
+
+em {
+	font-style: italic;
+}
+	
+	em.underline {
+		font-style: normal;
+	}
+
+strong {
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+body.js .js-hide, .hide {
+	display: none;
+}
+
+p, ul, ol, dl {
+	font-size: 1.05em;
+	line-height: 1.8em;
+	margin: 0 .25em 1em 365px;
+	text-align: justify;
+}
+
+ul, ol, dl {
+	display: block;
+	line-height: 1.4em;
+}
+
+ul li {
+	display: list-item;
+	line-height: 1.4em;
+	list-style: square outside;
+	margin: 0 0 .75em .25em;
+	text-align: left;
+}
+
+ul.no-bullets li {
+	list-style: none;
+	padding: 0;
+}
+
+
+dl {
+	font-size: 1em;
+}
+
+dt {
+	clear: both;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	width: 75px;
+}
+
+/*** Page Elements ***/
+
+h1 {
+	background: transparent url(header-bg.png) bottom repeat-x;
+	border: 1px solid #333;
+	border-radius: 6px;
+	color: #ddd;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	font-size: 30px;
+	margin: .5em 0 0;
+	padding: .5em;
+	text-align: center;
+}
+	
+	h1 strong {
+		color: white;
+	}
+
+#container {
+	margin: 0 auto;
+	position: relative;
+	width: 830px;
+}
+
+#page {
+	background: url(page-bg.png) repeat;
+	border: 1px solid #666;
+	border-top: 0;
+	border-bottom-left-radius: 6px;
+	-khtml-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	margin: 0 auto;
+	padding: .25em 1em 0;
+	width: 740px;
+}
+
+#matt-photo {
+	border: 1px solid #666;
+	border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	display: block;
+	position: absolute;
+	left: 35px;
+	top: 70px;
+}
+
+h2 {
+	border-bottom: 1px solid;
+	font-size: 24px;
+	margin: 0 50px 0 0;
+}
+
+#copyright {
+	display: inline;
+	float: right;
+	margin: -.25em 0 0;
+	padding: 0 0 .5em;
+}
+
+#license-link {
+	background: none;
+	border: none;
+	display: block;
+	height: 31px;
+	margin: 0 0 12px auto;
+	width: 88px;
+}
+
+span.ampersand {
+	font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+	font-style: italic;
+}
