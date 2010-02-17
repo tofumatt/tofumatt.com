@@ -57,33 +57,34 @@ small {
 /*** Page Styles ***/
 
 body {
-	background: #538cc1 url(tomato-cutout.png) bottom right no-repeat fixed;
+	background: #4d7294 url(tomato-cutout.png) bottom right no-repeat fixed;
+	color: #111;
 	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-	font-size: .9em;
+	font-size: 1em;
 }
 
 a {
-	border-bottom: 1px dashed;
-	color: #c12424;
+	border-bottom: 1px solid;
+	color: black;
 	text-decoration: none;
 }
 
-a:hover, a:focus, a.active {
-	background: url(page-bg.png) repeat;
-	border-bottom: 1px solid;
-}
-
-a:active {
-	background: white;
-	border-top: none;
+a:hover, a:focus {
+	background: url(page-bg.png);
 	border-bottom: none;
 }
 
+a:active {
+	background: url(page-bg.png);
+	border-bottom: 1px solid;
+}
+
 h1, h2, h3, h4, h5, h6 {
+	border-bottom: 2px solid white;
 	clear: both;
+	color: black;
 	font-family: "Hoefler Text", Times, "Times New Roman", serif;
 	font-weight: normal;
-	text-align: right;
 }
 
 em {
@@ -113,8 +114,8 @@ body.js .js-hide, .hide {
 p, ul, ol, dl {
 	font-size: 1.05em;
 	line-height: 1.8em;
-	margin: 0 .25em 1em 365px;
-	text-align: justify;
+	margin: 0 .25em 1em .75em;
+	text-align: left;
 }
 
 ul, ol, dl {
@@ -135,33 +136,43 @@ ul.no-bullets li {
 	padding: 0;
 }
 
-
 dl {
 	font-size: 1em;
 }
 
-dt {
-	clear: both;
-	display: inline;
-	float: left;
-	font-weight: bold;
-	width: 75px;
-}
+	dt {
+		clear: both;
+		color: black;
+		display: inline;
+		float: left;
+		font-weight: bold;
+		width: 185px;
+	}
+	
+	dd {
+		margin-left: 185px;
+	}
 
 /*** Page Elements ***/
 
 h1 {
 	background: transparent url(header-bg.png) bottom repeat-x;
 	border: 1px solid #333;
-	border-radius: 6px;
+	border-left: 0;
+	border-bottom-right-radius: 6px;
+	-khtml-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
 	color: #ddd;
-	-khtml-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
 	font-size: 30px;
-	margin: .5em 0 0;
+	margin: .5em 0;
 	padding: .5em;
 	text-align: center;
+	min-width: 750px;
 }
 	
 	h1 strong {
@@ -169,44 +180,34 @@ h1 {
 	}
 
 #container {
-	margin: 0 auto;
-	position: relative;
-	width: 830px;
+	margin: 0 auto 0 0;
+	width: 90%;
 }
 
 #page {
-	background: url(page-bg.png) repeat;
-	border: 1px solid #666;
-	border-top: 0;
-	border-bottom-left-radius: 6px;
-	-khtml-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	-khtml-border-bottom-right-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-webkit-border-bottom-right-radius: 6px;
-	margin: 0 auto;
+	background: url(page-bg.png);
+	border: 1px solid #ddd;
+	margin: 0 auto 20px 40px;
+	max-width: 800px;
 	padding: .25em 1em 0;
-	width: 740px;
+	position: relative;
 }
 
 #matt-photo {
 	border: 1px solid #666;
-	border-radius: 6px;
-	-khtml-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
+	border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	display: block;
 	position: absolute;
-	left: 35px;
-	top: 70px;
+	right: 5px;
+	top: 5px;
 }
 
 h2 {
-	border-bottom: 1px solid;
 	font-size: 24px;
-	margin: 0 50px 0 0;
+	margin: 0 50px 5px 0;
 }
 
 #copyright {
@@ -221,7 +222,7 @@ h2 {
 	border: none;
 	display: block;
 	height: 31px;
-	margin: 0 0 12px auto;
+	margin: 0 auto 12px 0;
 	width: 88px;
 }
 
