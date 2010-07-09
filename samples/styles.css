@@ -1,0 +1,133 @@
+/***** Reset Stylesheet *****/
+html,body,section,nav,article,aside,h1,h2,h3,h4,h5,h6,hgroup,header,footer,address,p,hr,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,a,em,strong,small,cite,q,dfn,abbr,time,code,var,samp,kbd,sub,sup,i,b,mark,ruby,rt,rp,bdo,span,br,wbr,ins,del,img,iframe,embed,object,param,video,audio,source,canvas,map,area,table,caption,colgroup,col,tbody,thead,tfoot,tr,td,th,form,fieldset,legend,label,input,button,select,datalist,optgroup,option,textarea,keygen,output,progress,meter,details,summary,command,menu{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;}
+body{background:white;color:black;font-size:0.625em;/* Sets 1em = 10px;optional */
+line-height:1;}
+ol,ul,li{list-style:none;margin:0;padding:0;}
+/* Remember cellspacing="0" because CSS+Tables=Fail */
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+/*** Sane defaults ***/
+b,strong{font-weight:bold;}
+i,em,cite{font-style:italic;}
+.underline{text-decoration:underline;}
+small {font-size: .8em;}
+/*** Page Styles ***/
+
+body {
+	background: #9b9e9e;
+	color: #111;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+#content a {
+	background: #ccc;
+	color: #4e6ce5;
+	text-decoration: none;
+}
+
+#content a:hover, #content a:focus {
+	background: #fffffd;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	color: #00000f;
+	font-weight: normal;
+}
+
+h1, h2 {
+	font-family: "Hoefler Text", Times, "Times New Roman", serif;
+}
+
+h1 {
+	border-bottom: 2px solid white;
+	font-size: 2.8em;
+	margin: .5em .5em .25em;
+}
+
+h2 {
+	color: #333;
+	font-size: 1.4em;
+	text-align: right;
+	width: 80%;
+}
+
+h3 {
+	border-bottom: 1px solid;
+	color: #fffffd;
+	font-size: 1.1em;
+	margin: 0 0 .5em;
+	width: 80%;
+}
+
+em {
+	font-style: italic;
+}
+	
+	em.underline {
+		font-style: normal;
+	}
+
+strong {
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+body.js .js-hide, .hide {
+	display: none;
+}
+
+p, ul, ol, dl {
+	font-size: 1em;
+	line-height: 1.8em;
+	margin: 0 30% 1em .75em;
+	text-align: left;
+}
+
+li {
+	list-style: disc outside;
+	margin: 0 0 0 3em;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 80%;
+}
+	
+	.compare {
+		margin: 0 0 10px 20px;
+	}
+	
+	#content .compare a, .compare span {
+		background: none;
+		float: left;
+	}
+	
+	.compare span {
+		margin: 45px 5px 0;
+	}
+	
+	.compare a.hidden {
+		display: none;
+	}
+
+#footer {
+	border-top: 1px solid #222;
+	color: #222;
+	clear: both;
+	font-size: .8em;
+	margin: 0 auto 0 0;
+	padding: 5px 50% 0 0;
+}
