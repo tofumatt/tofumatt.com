@@ -1,232 +1,98 @@
-/***** Reset Stuff *****/
-
-a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
-
-/*	Leave browsers to their own focus for this site.
-:focus {
-	outline: 0;
-}
-*/
-
-body {
-	line-height: 1;
-	color: black;
-	background: white;
-	font-size: 0.625em; /* Sets 1em = 10px; optional */
-}
-
-ol, ul, li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
+/***** Reset Stylesheet *****/
+html,body,section,nav,article,aside,h1,h2,h3,h4,h5,h6,hgroup,header,footer,address,p,hr,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,a,em,strong,small,cite,q,dfn,abbr,time,code,var,samp,kbd,sub,sup,i,b,mark,ruby,rt,rp,bdo,span,br,wbr,ins,del,img,iframe,embed,object,param,video,audio,source,canvas,map,area,table,caption,colgroup,col,tbody,thead,tfoot,tr,td,th,form,fieldset,legend,label,input,button,select,datalist,optgroup,option,textarea,keygen,output,progress,meter,details,summary,command,menu{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;}
+body{background:white;color:black;font-size:0.625em;/* Sets 1em = 10px;optional */
+line-height:1;}
+ol,ul,li{list-style:none;margin:0;padding:0;}
 /* Remember cellspacing="0" because CSS+Tables=Fail */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-}
-
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-}
-
-blockquote, q {
-	quotes: "" "";
-}
-
-small {
-	font-size: .8em;
-}
-
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+/*** Sane defaults ***/
+b,strong{font-weight:bold;}
+i,em,cite{font-style:italic;}
+.underline{text-decoration:underline;}
+small {font-size: .8em;}
 /*** Page Styles ***/
 
 body {
-	background: #4d7294 url(tomato-cutout.png) bottom right no-repeat fixed;
-	color: #111;
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	background: #ddd url(tomato-cutout.png) bottom right no-repeat fixed;
+	color: #333;
+	font-family: "Hoefler Text", Baskerville, "Adobe Garamond" Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	font-size: .8em;
+	line-height: 1.3em;
+	padding: 0 0 1em;
+	text-shadow: .01em .01em .2em #ccc;
 }
 
 a {
-	border-bottom: 1px solid;
-	color: black;
-	text-decoration: none;
-}
-
-a:hover, a:focus {
-	background: url(page-bg.png);
-	border-bottom: none;
-}
-
-a:active {
-	background: url(page-bg.png);
-	border-bottom: 1px solid;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	border-bottom: 2px solid white;
-	clear: both;
-	color: black;
-	font-family: "Hoefler Text", Times, "Times New Roman", serif;
-	font-weight: normal;
-}
-
-em {
-	font-style: italic;
+	color: #ae1217;
+	padding: 3px 2px 1px;
 }
 	
-	em.underline {
-		font-style: normal;
+	a:hover, a:focus {
+		background: white;
 	}
-
-strong {
-	font-weight: bold;
-}
 
 .clear {
 	clear: both;
 }
 
-.underline {
-	text-decoration: underline;
+h1, h2 {
+	font-size: 2em;
+	font-weight: bold;
+	height: 1em;
+	margin: .75em 0 .5em;
 }
-
-body.js .js-hide, .hide {
-	display: none;
-}
-
-p, ul, ol, dl {
-	font-size: 1.05em;
-	line-height: 1.8em;
-	margin: 0 .25em 1em .75em;
-	text-align: left;
-}
-
-ul, ol, dl {
-	display: block;
-	line-height: 1.4em;
-}
-
-ul li {
-	display: list-item;
-	line-height: 1.4em;
-	list-style: square outside;
-	margin: 0 0 .75em .25em;
-	text-align: left;
-}
-
-ul.no-bullets li {
-	list-style: none;
-	padding: 0;
-}
-
-dl {
-	font-size: 1em;
-}
-
-	dt {
-		clear: both;
-		color: black;
-		display: inline;
-		float: left;
-		font-weight: bold;
-		width: 185px;
-	}
-	
-	dd {
-		margin-left: 185px;
-	}
-
-/*** Page Elements ***/
 
 h1 {
-	background: transparent url(header-bg.png) bottom repeat-x;
-	border: 1px solid #333;
-	border-left: 0;
-	border-bottom-right-radius: 6px;
-	-khtml-border-bottom-right-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-webkit-border-bottom-right-radius: 6px;
-	border-top-right-radius: 6px;
-	-khtml-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	-webkit-border-top-right-radius: 6px;
-	color: #ddd;
-	font-size: 30px;
-	margin: .5em 0;
-	padding: .5em;
-	text-align: center;
-	min-width: 750px;
+	font-size: 2.5em;
+	margin: .5em 0 .5em .5em;
+	position: absolute;
+	text-indent: -9999px;
+	top: 0;
 }
-	
-	h1 strong {
-		color: white;
-	}
+
+h3 {
+	border-bottom: #111 1px solid;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	height: 1em;
+	margin: .5em 0;
+}
 
 #container {
-	margin: 0 auto 0 0;
-	width: 90%;
+	margin: 0 auto;
+	width: 700px;
 }
 
-#page {
-	background: url(page-bg.png);
-	border: 1px solid #ddd;
-	margin: 0 auto 20px 40px;
-	max-width: 800px;
-	padding: .25em 1em 0;
-	position: relative;
-}
-
-#matt-photo {
-	border: 1px solid #666;
-	border-radius: 3px;
-	-khtml-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	display: block;
-	position: absolute;
-	right: 5px;
-	top: 5px;
-}
-
-h2 {
-	font-size: 24px;
-	margin: 0 50px 5px 0;
-}
-
-#copyright {
-	display: inline;
-	float: right;
-	margin: -.25em 0 0;
-	padding: 0 0 .5em;
-}
-
-#license-link {
-	background: none;
-	border: none;
-	display: block;
-	height: 31px;
-	margin: 0 auto 12px 0;
-	width: 88px;
-}
-
-span.ampersand {
-	font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
-	font-style: italic;
-}
+	#container p, #container dl, #container ol, #container ul {
+		font-size: 1.2em;
+		line-height: 1.4em;
+		margin: 1em;
+		width: 500px;
+	}
+		
+		#container dt {
+			clear: both;
+			color: black;
+			display: inline;
+			float: left;
+			font-weight: bold;
+			width: 135px;
+		}
+		
+		#container dd {
+			font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+			margin: 0 0 10px 135px;
+		}
+	
+	#matt-photo {
+		border: #ccc 1px solid;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		float: right;
+		margin: 0 -175px 1em 100px;
+	}
