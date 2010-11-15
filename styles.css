@@ -17,19 +17,20 @@ small {font-size: .8em;}
 
 body {
 	background: #363636 url(tomato-cutout.png) bottom right no-repeat fixed;
-	color: #e5e5e5;
+	color: #c5c5c5;
 	font-family: "Hoefler Text", Baskerville, "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 	font-size: .8em;
 	line-height: 1.3em;
 	padding: 0 0 1em;
 	text-align: center;
-	text-shadow: 0 0 6px #030303;
+	text-shadow: 1px 1px 0 #030303;
 }
 
 a {
-	color: #c7141a;
+	color: #cf4444;
 	display: inline-block;
 	padding: 2px 2px 0;
+	text-shadow: 1px 1px 0 #030303;
 }
 	
 	a:hover, a:focus {
@@ -79,6 +80,10 @@ h1 {
 	position: absolute;
 	text-indent: -9999px;
 	top: 0;
+}
+
+h2, h3 {
+	color: #e5e5e5;
 }
 
 h2 {
