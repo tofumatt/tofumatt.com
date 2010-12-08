@@ -41,10 +41,10 @@ a {
 }
 	
 	a:hover, a:focus {
-		color: #dd6f5c;
+		color: #030303;
 		font-size: 1.5em;
 		margin: 0 10px;
-		text-shadow: 1px 1px 6px #a5a5a5;
+		text-shadow: 1px 1px 6px #fff;
 	}
 
 .border {
