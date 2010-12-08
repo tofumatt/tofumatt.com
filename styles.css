@@ -16,30 +16,35 @@ small {font-size: .8em;}
 /*** Page Styles ***/
 
 body {
-	background: #363636 url(tomato-cutout.png) bottom right no-repeat fixed;
-	color: #c5c5c5;
+	background: #f4f4f4 url(tomato-cutout.png) bottom right no-repeat fixed;
+	color: #331a15;
 	font-family: "Hoefler Text", Baskerville, "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 	font-size: .8em;
 	line-height: 1.3em;
 	padding: 0 0 1em;
 	text-align: center;
-	text-shadow: 1px 1px 0 #030303;
+	text-shadow: 1px 1px 0 #e5e5e5;
 }
 
 a {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	color: #cf4444;
 	display: inline-block;
+	font-size: 1em;
 	padding: 2px 2px 0;
-	text-shadow: 1px 1px 0 #030303;
+	transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
 }
 	
 	a:hover, a:focus {
-		background: #e5e5e5;
-		border-radius: 3px;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		color: #030303;
-		text-shadow: none;
+		color: #dd6f5c;
+		font-size: 1.5em;
+		margin: 0 10px;
+		text-shadow: 1px 1px 6px #a5a5a5;
 	}
 
 .border {
@@ -83,7 +88,7 @@ h1 {
 }
 
 h2, h3 {
-	color: #e5e5e5;
+	color: #030303;
 }
 
 h2 {
@@ -99,6 +104,7 @@ h3 {
 	font-style: italic;
 	height: 1em;
 	margin: .5em 0;
+	width: 600px;
 }
 
 #container {
@@ -130,6 +136,7 @@ h3 {
 #content {
 	left: 202px;
 	position: absolute;
+	text-align: center;
 }
 
 #matt-photo {
