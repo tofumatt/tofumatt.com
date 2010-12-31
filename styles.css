@@ -134,22 +134,51 @@ h3 {
 	position: fixed;
 	right: 0;
 	width: 300px;
-	z-index: 1;
 }
 
 #container {
 	margin: 50px auto 0;
 	position: relative;
 	width: 850px;
-	z-index: 2;
 }
 
 #container p, #container dl, #container ol, #container ul {
 	font-size: 1.2em;
 	line-height: 1.4em;
 	margin: 1em 1em .5em 100px;
+	position: relative;
 	text-align: justify;
 	width: 500px;
+}
+
+a.paragraph-image {
+	background: none !important;
+	opacity: 1;
+	padding: 0;
+	position: absolute;
+}
+
+a.paragraph-image:hover, a.paragraph-image:focus {
+	opacity: .8;
+}
+
+a.paragraph-image:active {
+	opacity: 1;
+}
+
+#viewpoint-image {
+	right: -125px;
+	top: 40%;
+}
+
+#prey-fetcher-image {
+	right: -132.5px;
+	top: -125%;
+}
+
+#skarmory-image {
+	right: -100px;
+	top: -12.5%;
 }
 
 #container dt {
