@@ -151,6 +151,11 @@ h3 {
 	width: 500px;
 }
 
+#container p#intro {
+	margin: 0 auto;
+	text-align: center;
+}
+
 a.paragraph-image {
 	background: none !important;
 	opacity: 1;
