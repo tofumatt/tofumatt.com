@@ -128,10 +128,11 @@ h3 {
 
 #tomato {
 	background: url(tomato-cutout.png) center no-repeat;
-	bottom: 0;
+	bottom: auto;
 	display: block;
 	height: 300px;
-	position: fixed;
+	margin: -288px 0 0;
+	position: absolute;
 	right: 0;
 	width: 300px;
 }
