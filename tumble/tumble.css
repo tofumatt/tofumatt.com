@@ -1,0 +1,236 @@
+/***** Reset Stylesheet *****/
+html,body,section,nav,article,aside,h1,h2,h3,h4,h5,h6,hgroup,header,footer,address,p,hr,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,a,em,strong,small,cite,q,dfn,abbr,time,code,var,samp,kbd,sub,sup,i,b,mark,ruby,rt,rp,bdo,span,br,wbr,ins,del,img,iframe,embed,object,param,video,audio,source,canvas,map,area,table,caption,colgroup,col,tbody,thead,tfoot,tr,td,th,form,fieldset,legend,label,input,button,select,datalist,optgroup,option,textarea,keygen,output,progress,meter,details,summary,command,menu{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;}
+body{background:white;color:black;font-size:0.625em;/* Sets 1em = 10px;optional */
+line-height:1;}
+ol,ul,li{list-style:none;margin:0;padding:0;}
+/* Remember cellspacing="0" because CSS+Tables=Fail */
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+/*** Sane defaults ***/
+b,strong{font-weight:bold;}
+i,em,cite{font-style:italic;}
+.underline{text-decoration:underline;}
+small {font-size: .8em;}
+/*** Page Styles ***/
+
+body {
+	background: #0a0a0a url(http://lonelyvegan.com/tumble/background.jpg);
+	color: #ccb4af;
+	font-family: "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	font-size: .8em;
+	line-height: 1.3em;
+	padding: 0 0 1em;
+	text-align: center;
+	text-shadow: 1px 1px 0 #e5e5e5;
+}
+
+a {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #cf4444;
+	display: inline-block;
+	outline: none;
+	padding: 2px 1px 0;
+	transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
+}
+	
+	a:hover, a:focus {
+		color: #030303;
+		text-shadow: 1px 1px 6px #fff;
+	}
+	
+	a:active {
+		background: #cf4444;
+		color: #f4f4f4;
+		text-shadow: none;
+		transition: all 125ms ease-in-out;
+		-moz-transition: all 125ms ease-in-out;
+		-o-transition: all 125ms ease-in-out;
+		-webkit-transition: all 125ms ease-in-out;
+	}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.block {
+	display: block;
+}
+
+.border {
+	border: #331a15 1px solid;
+}
+
+.box-shadow {
+	box-shadow: 3px 3px 6px #000;
+	-moz-box-shadow: 3px 3px 6px #000;
+	-webkit-box-shadow: 3px 3px 6px #000;
+}
+
+.box-shadow-blur {
+	box-shadow: 0 1px 6px #030303;
+	-moz-box-shadow: 0 1px 6px #030303;
+	-webkit-box-shadow: 0 1px 6px #030303;
+}
+
+.box-shadow-soft {
+	box-shadow: 0 1px 6px #ccc;
+	-moz-box-shadow: 0 1px 6px #ccc;
+	-webkit-box-shadow: 0 1px 6px #ccc;
+}
+
+.clear {
+	clear: both;
+}
+
+.rounded {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+h1, h2, h3 {
+	color: #030303;
+}
+
+h1 {
+	font-size: 2.3em;
+	height: 1em;
+	margin: .75em 0 25px;
+}
+
+h2 {
+	border-bottom: #111 1px solid;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	height: 1em;
+	margin: .5em auto;
+	text-align: center;
+	width: 700px;
+}
+
+h3 {
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	height: 1em;
+	margin: 1.5em auto -.5em;
+	text-align: left;
+	width: 700px;
+}
+
+#tomato {
+	background: url(tomato-cutout.png) center no-repeat;
+	bottom: auto;
+	display: block;
+	height: 300px;
+	margin: -288px 0 0;
+	position: absolute;
+	right: 0;
+	width: 300px;
+}
+
+#container {
+	margin: 50px auto 0;
+	position: relative;
+	width: 850px;
+}
+
+#container p, #container dl, #container ol, #container ul {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 1em 1em .5em 100px;
+	position: relative;
+	text-align: justify;
+	width: 500px;
+}
+
+#container p#intro {
+	margin: 0 auto;
+	text-align: center;
+}
+
+a.paragraph-image {
+	background: none !important;
+	opacity: 1;
+	padding: 0;
+	position: absolute;
+}
+
+a.paragraph-image:hover, a.paragraph-image:focus {
+	opacity: .8;
+}
+
+a.paragraph-image:active {
+	opacity: 1;
+}
+
+#viewpoint-image {
+	right: -125px;
+	top: 40%;
+}
+
+#prey-fetcher-image {
+	right: -132.5px;
+	top: -125%;
+}
+
+#skarmory-image {
+	right: -100px;
+	top: -12.5%;
+}
+
+#container dt {
+	clear: both;
+	color: black;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	width: 135px;
+}
+
+#container dd {
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	margin: 0 0 10px 135px;
+}
+
+#content {
+	text-align: center;
+}
+
+#rays {
+	background: url(sun-rays.png) bottom center no-repeat;
+	margin: 0 auto;
+	width: 700px;
+}
+
+#matt-photo-container {
+	height: 300px;
+	margin: 0 auto 25px;
+	position: relative;
+	width: 300px;
+}
+
+#matt-photo, #matt-photo-hover {
+	display: block;
+	height: 300px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+}
+
+#matt-photo {
+	z-index: 3;
+}
+
+#matt-photo-hover {
+	z-index: 2;
+}
