@@ -222,6 +222,10 @@ a.paragraph-image:active {
 }
 
 /** Tumblr junk */
+.post {
+	margin: 0 0 30px;
+}
+
 ul.chat li  {
 	clear: both;
 	display: block;
