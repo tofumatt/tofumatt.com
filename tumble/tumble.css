@@ -17,7 +17,7 @@ small {font-size: .8em;}
 
 body {
 	background: #0a0a0a url(http://lonelyvegan.com/tumble/background.jpg);
-	color: #ccb4af;
+	color: #acacac;
 	font-family: "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 	font-size: .8em;
 	line-height: 1.3em;
@@ -97,7 +97,7 @@ a {
 }
 
 h1, h2, h3 {
-	color: #acacac;
+	color: #f3f3f3;
 }
 
 h1 {
@@ -173,21 +173,6 @@ a.paragraph-image:active {
 	opacity: 1;
 }
 
-#viewpoint-image {
-	right: -125px;
-	top: 40%;
-}
-
-#prey-fetcher-image {
-	right: -132.5px;
-	top: -125%;
-}
-
-#skarmory-image {
-	right: -100px;
-	top: -12.5%;
-}
-
 #container dt {
 	clear: both;
 	color: black;
@@ -234,4 +219,11 @@ a.paragraph-image:active {
 
 #matt-photo-hover {
 	z-index: 2;
+}
+
+/** Tumblr junk */
+ul.chat li .sender {
+	float: left;
+	margin: 0 2px 0 0;
+	width: 125px;
 }
