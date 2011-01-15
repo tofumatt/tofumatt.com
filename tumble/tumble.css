@@ -222,8 +222,18 @@ a.paragraph-image:active {
 }
 
 /** Tumblr junk */
+ul.chat li  {
+	clear: both;
+	display: block;
+}
+
 ul.chat li .sender {
 	float: left;
 	margin: 0 2px 0 0;
-	width: 125px;
+	width: 100px;
+}
+
+ul.chat li .message {
+	float: left;
+	width: 380px;
 }
