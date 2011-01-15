@@ -23,17 +23,18 @@ body {
 	line-height: 1.3em;
 	padding: 0 0 1em;
 	text-align: center;
-	text-shadow: 1px 1px 0 #e5e5e5;
+	text-shadow: 1px 1px 1px #1a1a1a;
 }
 
 a {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	color: #cf4444;
+	color: #f4f4f4;
 	display: inline-block;
 	outline: none;
 	padding: 2px 1px 0;
+	text-decoration: underline;
 	transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
 	-o-transition: all 250ms ease-in-out;
@@ -41,12 +42,12 @@ a {
 }
 	
 	a:hover, a:focus {
-		color: #030303;
+		color: #fefefe;
+		text-decoration: none;
 		text-shadow: 1px 1px 6px #fff;
 	}
 	
 	a:active {
-		background: #cf4444;
 		color: #f4f4f4;
 		text-shadow: none;
 		transition: all 125ms ease-in-out;
