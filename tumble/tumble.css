@@ -69,21 +69,21 @@ a {
 }
 
 .box-shadow {
-	box-shadow: 3px 3px 6px #000;
-	-moz-box-shadow: 3px 3px 6px #000;
-	-webkit-box-shadow: 3px 3px 6px #000;
+	box-shadow: 3px 3px 6px #fff;
+	-moz-box-shadow: 3px 3px 6px #fff;
+	-webkit-box-shadow: 3px 3px 6px #fff;
 }
 
 .box-shadow-blur {
-	box-shadow: 0 1px 6px #030303;
-	-moz-box-shadow: 0 1px 6px #030303;
-	-webkit-box-shadow: 0 1px 6px #030303;
+	box-shadow: 0 1px 6px #f3f3f3;
+	-moz-box-shadow: 0 1px 6px #f3f3f3;
+	-webkit-box-shadow: 0 1px 6px #f3f3f3;
 }
 
 .box-shadow-soft {
-	box-shadow: 0 1px 6px #ccc;
-	-moz-box-shadow: 0 1px 6px #ccc;
-	-webkit-box-shadow: 0 1px 6px #ccc;
+	box-shadow: 0 1px 6px #444;
+	-moz-box-shadow: 0 1px 6px #444;
+	-webkit-box-shadow: 0 1px 6px #444;
 }
 
 .clear {
@@ -128,7 +128,7 @@ h3 {
 }
 
 #tomato {
-	background: url(tomato-cutout.png) center no-repeat;
+	background: url(http://lonelyvegan.com/tomato-cutout.png) center no-repeat;
 	bottom: auto;
 	display: block;
 	height: 300px;
@@ -192,7 +192,7 @@ a.paragraph-image:active {
 }
 
 #rays {
-	background: url(sun-rays.png) bottom center no-repeat;
+	background: url(http://lonelyvegan.com/sun-rays.png) bottom center no-repeat;
 	margin: 0 auto;
 	width: 700px;
 }
