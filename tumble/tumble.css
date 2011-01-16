@@ -218,6 +218,12 @@ a.paragraph-image:active {
 	z-index: 2;
 }
 
+footer {
+	border-top: 3px double #444;
+	display: block;
+	padding: 15px 0 0;
+}
+
 /** Tumblr junk */
 .post {
 	border-top: 3px double #444;
