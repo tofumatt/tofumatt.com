@@ -225,23 +225,23 @@ a.paragraph-image:active {
 
 ul.chat li  {
 	clear: both;
-	display: block;
+	float: left;
 }
 
-ul.chat li:nth-child(even) span {
+ul.chat li:nth-child(even) {
 	background: #444;
+	padding: 2px;
 }
 
 ul.chat li .sender {
 	color: #fefefe;
 	float: left;
-	padding: 2px 12px 2px 2px;
+	margin: 0 12px 0 0;
 	text-align: right;
 	width: 100px;
 }
 
 ul.chat li .message {
 	float: left;
-	paddin: 2px 2px 2px 2px;
 	width: 380px;
 }
