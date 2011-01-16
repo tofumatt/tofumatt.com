@@ -120,7 +120,7 @@ h3 {
 	font-weight: bold;
 	font-size: 1.5em;
 	height: 1em;
-	margin: 1.5em auto -.5em;
+	margin: 0 auto -.5em;
 	text-align: left;
 	width: 700px;
 }
@@ -220,17 +220,19 @@ a.paragraph-image:active {
 
 /** Tumblr junk */
 .post {
+	border-top: 3px double #444;
 	margin: 0 0 30px;
+	padding: 30px 0 0;
 }
 
 ul.chat li  {
 	clear: both;
 	float: left;
+	padding: 2px;
 }
 
 ul.chat li:nth-child(odd) {
 	background: #444;
-	padding: 2px;
 }
 
 ul.chat li .sender {
