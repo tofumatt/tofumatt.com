@@ -18,7 +18,7 @@ small {font-size: .8em;}
 body {
 	background: #0a0a0a url(http://lonelyvegan.com/tumble/background.jpg);
 	color: #acacac;
-	font-family: "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	font-size: .8em;
 	line-height: 1.3em;
 	padding: 0 0 1em;
@@ -108,7 +108,6 @@ h1 {
 
 h2 {
 	border-bottom: #111 1px solid;
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	font-style: italic;
 	height: 1em;
@@ -118,7 +117,6 @@ h2 {
 }
 
 h3 {
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 1.5em;
 	height: 1em;
@@ -183,7 +181,6 @@ a.paragraph-image:active {
 }
 
 #container dd {
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	margin: 0 0 10px 135px;
 }
 
@@ -231,13 +228,20 @@ ul.chat li  {
 	display: block;
 }
 
+ul.chat li:nth-child(even) span {
+	background: #444;
+}
+
 ul.chat li .sender {
+	color: #fefefe;
 	float: left;
-	margin: 0 2px 0 0;
+	padding: 2px 12px 2px 2px;
+	text-align: right;
 	width: 100px;
 }
 
 ul.chat li .message {
 	float: left;
+	paddin: 2px 2px 2px 2px;
 	width: 380px;
 }
