@@ -228,7 +228,7 @@ ul.chat li  {
 	float: left;
 }
 
-ul.chat li:nth-child(even) {
+ul.chat li:nth-child(odd) {
 	background: #444;
 	padding: 2px;
 }
