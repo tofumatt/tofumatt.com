@@ -177,6 +177,11 @@ a.paragraph-image:active {
 	top: 40%;
 }
 
+#falcon-image {
+	right: -125px;
+	top: -62.5%;
+}
+
 #prey-fetcher-image {
 	right: -132.5px;
 	top: -125%;
