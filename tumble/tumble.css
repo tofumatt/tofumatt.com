@@ -96,6 +96,18 @@ a {
 	-webkit-border-radius: 3px;
 }
 
+blockquote {
+	border-left: 1px solid #fefefe;
+	color: #f3f3f3;
+	font-style: italic;
+	margin: 0 0 0 20px;
+	padding: 0 20px 0 10px;
+}
+
+blockquote em {
+	font-style: normal;
+}
+
 h1, h2, h3 {
 	color: #f3f3f3;
 }
