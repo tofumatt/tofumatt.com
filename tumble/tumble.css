@@ -234,6 +234,12 @@ a.paragraph-image:active {
 	z-index: 2;
 }
 
+nav {
+	border-top: 3px double #444;
+	display: block;
+	padding: 15px 0 0;
+}
+
 nav ul#nav-links li {
 	display: inline;
 }
