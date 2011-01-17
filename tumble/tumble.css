@@ -234,6 +234,10 @@ a.paragraph-image:active {
 	z-index: 2;
 }
 
+nav ul#nav-links li {
+	display: inline;
+}
+
 footer {
 	border-top: 3px double #444;
 	display: block;
