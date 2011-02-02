@@ -257,10 +257,14 @@ footer {
 	padding: 30px 0 0;
 }
 
+#container ul.chat {
+	width: 600px;
+}
+
 ul.chat li  {
 	clear: both;
 	float: left;
-	padding: 2px;
+	padding: 2px 8px 2px 0px;
 }
 
 ul.chat li:nth-child(odd) {
@@ -277,5 +281,5 @@ ul.chat li .sender {
 
 ul.chat li .message {
 	float: left;
-	width: 380px;
+	width: 480px;
 }
