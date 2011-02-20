@@ -105,7 +105,7 @@ h1 {
 	margin: .75em 0 25px;
 }
 
-h2 {
+h2, #header h3 {
 	border-bottom: #111 1px solid;
 	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
@@ -116,7 +116,7 @@ h2 {
 	width: 700px;
 }
 
-h3 {
+#content h3 {
 	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -152,11 +152,6 @@ h3 {
 	width: 500px;
 }
 
-#container p#intro {
-	margin: 0 auto;
-	text-align: center;
-}
-
 a.paragraph-image {
 	background: none !important;
 	opacity: 1;
@@ -170,6 +165,12 @@ a.paragraph-image:hover, a.paragraph-image:focus {
 
 a.paragraph-image:active {
 	opacity: 1;
+}
+
+#container #header p {
+	margin: 0 0 0.5em 305px;
+	text-align: center;
+	width: auto;
 }
 
 #viewpoint-image {
@@ -210,15 +211,15 @@ a.paragraph-image:active {
 	text-align: center;
 }
 
-#rays {
-	background: url(sun-rays.png) bottom center no-repeat;
+#header {
 	margin: 0 auto;
 	width: 700px;
 }
 
 #matt-photo-container {
+	float: left;
 	height: 300px;
-	margin: 0 auto 25px;
+	margin: 0 auto 25px 0;
 	position: relative;
 	width: 300px;
 }
@@ -232,10 +233,25 @@ a.paragraph-image:active {
 	width: 300px;
 }
 
-#matt-photo {
-	z-index: 3;
+#container ul#contact {
+	border-left: none;
+	border-right: none;
+	height: 50px;
+	margin: 0 auto;
+	padding: 25px 0 0;
+	width: 240px;
 }
 
-#matt-photo-hover {
-	z-index: 2;
+#container ul#contact li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#container ul#contact li a {
+	float: left;
+	font-size: 1.25em;
+	margin: 0 4.5px;
+	padding: 4px 2px 0;
 }
