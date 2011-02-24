@@ -107,8 +107,8 @@ h1 {
 
 h2, #header h3 {
 	border-bottom: #111 1px solid;
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
 	font-style: italic;
 	height: 1em;
 	margin: .5em auto;
