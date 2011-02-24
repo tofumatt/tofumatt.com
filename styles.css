@@ -117,9 +117,9 @@ h2, #header h3 {
 }
 
 #content h3 {
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	height: 1em;
 	margin: 1.5em auto -.5em;
 	text-align: left;
