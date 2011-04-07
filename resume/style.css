@@ -70,7 +70,7 @@ h1 {
 h2 {
 	border-bottom: #111 1px solid;
 	font-family: "Myriad Pro", Helvetica, FreeSans, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	font-style: italic;
 	height: 1em;
 	margin: 1em auto 0.25em;
@@ -100,7 +100,7 @@ ul li {
 }
 
 dl dt {
-	font-size: 1.4em;
+	font-size: 1.3em;
 	font-weight: bold;
 	margin: 1.5em 0 -0.5em;
 }
