@@ -1,0 +1,110 @@
+/***** Reset Stylesheet *****/
+html,body,section,nav,article,aside,h1,h2,h3,h4,h5,h6,hgroup,header,footer,address,p,hr,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,a,em,strong,small,cite,q,dfn,abbr,time,code,var,samp,kbd,sub,sup,i,b,mark,ruby,rt,rp,bdo,span,br,wbr,ins,del,img,iframe,embed,object,param,video,audio,source,canvas,map,area,table,caption,colgroup,col,tbody,thead,tfoot,tr,td,th,form,fieldset,legend,label,input,button,select,datalist,optgroup,option,textarea,keygen,output,progress,meter,details,summary,command,menu{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;}
+body{background:white;color:black;font-size:0.625em;/* Sets 1em = 10px;optional */
+line-height:1;}
+ol,ul,li{list-style:none;margin:0;padding:0;}
+/* Remember cellspacing="0" because CSS+Tables=Fail */
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+/*** Sane defaults ***/
+b,strong{font-weight:bold;}
+i,em,cite{font-style:italic;}
+.underline{text-decoration:underline;}
+small {font-size: .8em;}
+
+body {
+	background: #f4f4f4;
+	color: #331a15;
+	font-family: "Hoefler Text", Baskerville, "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, Times, FreeSerif, "Times New Roman", serif;
+	font-size: 1em;
+	line-height: 1.3em;
+	padding: 0 0 1em;
+	text-shadow: 1px 1px 0 #e5e5e5;
+}
+
+a {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #cf4444;
+	outline: none;
+	padding: 2px 1px 0;
+	transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
+}
+	
+	a:hover, a:focus {
+		color: #030303;
+		text-shadow: 1px 1px 6px #fff;
+	}
+	
+	a:active {
+		background: #cf4444;
+		color: #f4f4f4;
+		text-shadow: none;
+		transition: all 125ms ease-in-out;
+		-moz-transition: all 125ms ease-in-out;
+		-o-transition: all 125ms ease-in-out;
+		-webkit-transition: all 125ms ease-in-out;
+	}
+
+#page {
+	margin: 0 auto;
+	width: 740px;
+}
+
+h1, h2, h3 {
+	color: #030303;
+}
+
+h1 {
+	font-size: 2.3em;
+	height: 1em;
+	margin: .75em 0 25px;
+}
+
+h2 {
+	border-bottom: #111 1px solid;
+	font-family: "Myriad Pro", Helvetica, FreeSans, Arial, sans-serif;
+	font-size: 1.6em;
+	font-style: italic;
+	height: 1em;
+	margin: 1em auto 0.25em;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Myriad Pro", Helvetica, FreeSans, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	height: 1em;
+	margin: 1.5em auto -.5em;
+	text-align: left;
+	width: 700px;
+}
+
+p, dl, ol, ul {
+	line-height: 1.4em;
+	margin: 1em 200px .5em 0;
+	position: relative;
+	text-align: justify;
+}
+
+ul li {
+	list-style: disc outside;
+	margin: 0 0 0.75em 3em;
+}
+
+dl dt {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 1.5em 0 -0.5em;
+}
+
+dl dd p {
+	margin-right: 0;
+}
