@@ -19,10 +19,9 @@ body {
 	background: #f4f4f4 url(background.jpg);
 	color: #331a15;
 	font-family: "Hoefler Text", Baskerville, "Adobe Garamond", Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
-	font-size: .8em;
+	font-size: 1.4em;
 	line-height: 1.3em;
 	padding: 0 0 1em;
-	text-align: center;
 	text-shadow: 1px 1px 0 #e5e5e5;
 }
 
@@ -34,15 +33,15 @@ a {
 	display: inline-block;
 	outline: none;
 	padding: 2px 1px 0;
-	transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-webkit-transition: all 250ms ease-in-out;
 }
 	
 	a:hover, a:focus {
 		color: #030303;
 		text-shadow: 1px 1px 6px #fff;
+		transition: all 250ms ease-in-out;
+		-moz-transition: all 250ms ease-in-out;
+		-o-transition: all 250ms ease-in-out;
+		-webkit-transition: all 250ms ease-in-out;
 	}
 	
 	a:active {
@@ -95,163 +94,74 @@ a {
 	-webkit-border-radius: 3px;
 }
 
-h1, h2, h3 {
-	color: #030303;
+#page {
+	margin: 0 auto;
+	width: 720px;
 }
 
-h1 {
-	font-size: 2.3em;
-	height: 1em;
-	margin: .75em 0 25px;
-}
-
-h2, #header h3 {
-	border-bottom: #111 1px solid;
-	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
-	font-size: 1.3em;
-	font-style: italic;
-	height: 1em;
-	margin: .5em auto;
+header {
 	text-align: center;
-	width: 700px;
 }
 
-#content h3 {
-	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 1.3em;
-	height: 1em;
-	margin: 1.5em auto -.5em;
-	text-align: left;
-	width: 700px;
+header {
+	font-size: 1.7em;
+	line-height: 1.4em;
+	margin: 50px 0 35px;
+}
+
+h3 {
+	font-size: .8em;
+}
+
+h4 {
+	font-size: .6em;
+}
+
+#matt-photo {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#content ul {
+	float: right;
+	margin: 65px 0 0;
+	width: 380px;
+}
+
+#content li {
+	list-style: disc outside;
+	font-size: .75em;
+}
+
+#contact-links {
+	padding: 25px 0 0;
+	text-align: center;
+}
+
+#contact-links li {
+	display: inline;
+}
+
+#contact-links li a {
+	padding: 2.5px 10px 0;
 }
 
 #tomato {
 	background: url(tomato-cutout.png) center no-repeat;
-	bottom: auto;
+	bottom: 0;
 	display: block;
 	height: 300px;
 	margin: -288px 0 0;
-	position: absolute;
+	opacity: 0.25;
+	position: fixed;
 	right: 0;
+	transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
 	width: 300px;
 }
-
-#container {
-	margin: 50px auto 0;
-	position: relative;
-	width: 850px;
-}
-
-#container p, #container dl, #container ol, #container ul {
-	font-size: 1.2em;
-	line-height: 1.4em;
-	margin: 1em 1em .5em 100px;
-	position: relative;
-	text-align: justify;
-	width: 500px;
-}
-
-a.paragraph-image {
-	background: none !important;
-	opacity: 1;
-	padding: 0;
-	position: absolute;
-}
-
-a.paragraph-image:hover, a.paragraph-image:focus {
-	opacity: .8;
-}
-
-a.paragraph-image:active {
-	opacity: 1;
-}
-
-#container #header p {
-	margin: 0 0 0.5em 305px;
-	text-align: center;
-	width: auto;
-}
-
-#viewpoint-image {
-	right: -125px;
-	top: 40%;
-}
-
-#falcon-image {
-	right: -125px;
-	top: -62.5%;
-}
-
-#prey-fetcher-image {
-	right: -132.5px;
-	top: -125%;
-}
-
-#skarmory-image {
-	right: -100px;
-	top: -12.5%;
-}
-
-#container dt {
-	clear: both;
-	color: black;
-	display: inline;
-	float: left;
-	font-weight: bold;
-	width: 135px;
-}
-
-#container dd {
-	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-	margin: 0 0 10px 135px;
-}
-
-#content {
-	text-align: center;
-}
-
-#header {
-	margin: 0 auto;
-	width: 700px;
-}
-
-#matt-photo-container {
-	float: left;
-	height: 300px;
-	margin: 0 auto 25px 0;
-	position: relative;
-	width: 300px;
-}
-
-#matt-photo, #matt-photo-hover {
-	display: block;
-	height: 300px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 300px;
-}
-
-#container ul#contact {
-	border-left: none;
-	border-right: none;
-	height: 50px;
-	margin: 0 auto;
-	padding: 25px 0 0;
-	width: 240px;
-}
-
-#container ul#contact li {
-	display: inline;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#container ul#contact li a {
-	float: left;
-	font-size: 1.25em;
-	margin: 0 4.5px;
-	padding: 4px 2px 0;
-}
+	
+	#tomato:hover {
+		opacity: 1;
+	}
