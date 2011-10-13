@@ -29,7 +29,7 @@ a {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    color: #cf4444;
+    color: #b50909;
     display: inline-block;
     outline: none;
     padding: 2px 1px 0;
@@ -95,10 +95,10 @@ a {
 }
 
 header {
+    color: #b8b4a9;
     font-size: 1.7em;
     line-height: 1.4em;
-    margin: 120px 0 135px;
-    text-align: center;
+    margin: 200px 0 25px;
 }
 
 h2 {
@@ -108,12 +108,15 @@ h2 {
 
 h3 {
     font-size: 1.3em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #matt-photo {
+    border: 2px solid #302f2c;
+    box-shadow: 0 0 7px #000;
     float: left;
     margin: 0 30px 0 0;
+    padding: 2px;
 }
 
 #content {
@@ -121,13 +124,13 @@ h3 {
 }
 
 #content p {
-    margin: 0 0 10px;
+    line-height: 1.25em;
+    margin: 0 15% 7.5px 0;
 }
 
 #contact {
     font-size: 1.1em;
-    padding: 15px 0 0;
-    text-align: center;
+    padding: 25px 0 0;
 }
 
 #contact li {
@@ -135,5 +138,6 @@ h3 {
 }
 
 #contact a {
-    padding: 2.5px 10px 0;
+    margin: 2.5px 20px 0 0;
+    padding: 0;
 }
