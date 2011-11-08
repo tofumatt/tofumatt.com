@@ -13,22 +13,31 @@ b,strong{font-weight:bold;}
 i,em,cite{font-style:italic;}
 .underline{text-decoration:underline;}
 small {font-size: .8em;}
-/*** Page Styles ***/
 
+/** Page Styles */
 body {
-    background: #1a1a1a;
+    background: #000 url(bike-cutout.jpg) right bottom fixed no-repeat;
     color: #ebe7d8;
     font-family: Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
     font-size: 1.4em;
     line-height: 1.3em;
-    padding: 0 0 1em;
+    padding: 190px 0 1em;
     text-shadow: 1px 1px 0 #000;
 }
 
+::selection {
+    background: none;
+}
+
+::-moz-selection {
+    background: none;
+}
+
+::-webkit-selection {
+    background: none;
+}
+
 a {
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
     color: #b50909;
     display: inline-block;
     outline: none;
@@ -90,15 +99,53 @@ a {
 }
 
 #page {
+    background: #1a1a1a;
+    background: rgba(26, 26, 26, .95);
+    -moz-box-shadow: 3px 3px 6px #000;
+    -webkit-box-shadow: 3px 3px 6px #000;
+    box-shadow: 3px 3px 6px #000;
     margin: 0 auto;
+    padding: 10px 5px 15px 15px;
+    transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
     width: 815px;
+}
+
+#page:hover *::selection {
+    background: rgba(46, 76, 176, .85);
+}
+
+#page:hover *::-moz-selection {
+    background: rgba(46, 76, 176, .85);
+}
+
+#page:hover *::-webkit-selection {
+    background: rgba(46, 76, 176, .85);
+}
+
+#page:hover {
+    background: rgba(26, 26, 26, 1);
+}
+
+#page.hide {
+    opacity: .1;
+}
+
+body:active #page, body:focus #page {
+    opacity: 0;
+}
+
+#page:active, #page:focus, #page:hover {
+    opacity: 1 !important;
 }
 
 header {
     color: #b8b4a9;
     font-size: 1.7em;
     line-height: 1.4em;
-    margin: 200px 0 25px;
+    margin: 0 0 25px;
 }
 
 h2 {
