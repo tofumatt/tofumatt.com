@@ -16,13 +16,13 @@ small {font-size: .8em;}
 
 /** Page Styles */
 body {
-    background: #000 url(bike-cutout.jpg) right bottom fixed no-repeat;
-    color: #ebe7d8;
+    background: #f3f3f3 url(bg.jpg) 50% 25px no-repeat;
+    color: #141413;
     font-family: Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
     font-size: 1.4em;
     line-height: 1.3em;
     padding: 190px 0 1em;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 ::selection {
@@ -49,12 +49,12 @@ a {
 }
 
     a:hover, a:focus {
-        color: #fff;
-        text-shadow: 1px 1px 6px #000;
+        color: #000;
+        text-shadow: 1px 1px 6px #fff;
     }
 
     a:active {
-        color: #f4f4f4;
+        color: #040404;
         text-shadow: none;
     }
 
@@ -67,25 +67,25 @@ a {
 }
 
 .border {
-    border: #f3f3f3 1px solid;
+    border: #030303 1px solid;
 }
 
 .box-shadow {
-    box-shadow: 3px 3px 6px #000;
-    -moz-box-shadow: 3px 3px 6px #000;
-    -webkit-box-shadow: 3px 3px 6px #000;
+    box-shadow: 3px 3px 6px #fff;
+    -moz-box-shadow: 3px 3px 6px #fff;
+    -webkit-box-shadow: 3px 3px 6px #fff;
 }
 
 .box-shadow-blur {
-    box-shadow: 0 1px 6px #030303;
-    -moz-box-shadow: 0 1px 6px #030303;
-    -webkit-box-shadow: 0 1px 6px #030303;
+    box-shadow: 0 1px 6px #f3f3f3;
+    -moz-box-shadow: 0 1px 6px #f3f3f3;
+    -webkit-box-shadow: 0 1px 6px #f3f3f3;
 }
 
 .box-shadow-soft {
-    box-shadow: 0 1px 6px #ccc;
-    -moz-box-shadow: 0 1px 6px #ccc;
-    -webkit-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #333;
+    -moz-box-shadow: 0 1px 6px #333;
+    -webkit-box-shadow: 0 1px 6px #333;
 }
 
 .clear {
@@ -98,51 +98,27 @@ a {
     -webkit-border-radius: 3px;
 }
 
-#page {
-    background: #1a1a1a;
-    background: rgba(26, 26, 26, .95);
-    -moz-box-shadow: 3px 3px 6px #000;
-    -webkit-box-shadow: 3px 3px 6px #000;
-    box-shadow: 3px 3px 6px #000;
+#container {
     margin: 0 auto;
-    padding: 10px 5px 15px 15px;
+    position: relative;
+    width: 820px;
+}
+
+#page {
+    background: #f3f3f3;
+    margin: 2px 0 0 1px;
+    padding: 10px 0 15px 20px;
+    position: fixed;
+    top: 300px;
     transition: all 400ms linear;
     -moz-transition: all 400ms linear;
     -o-transition: all 400ms linear;
     -webkit-transition: all 400ms linear;
-    width: 815px;
-}
-
-#page:hover *::selection {
-    background: rgba(46, 76, 176, .85);
-}
-
-#page:hover *::-moz-selection {
-    background: rgba(46, 76, 176, .85);
-}
-
-#page:hover *::-webkit-selection {
-    background: rgba(46, 76, 176, .85);
-}
-
-#page:hover {
-    background: rgba(26, 26, 26, 1);
-}
-
-#page.hide {
-    opacity: .1;
-}
-
-body:active #page, body:focus #page {
-    opacity: 0;
-}
-
-#page:active, #page:focus, #page:hover {
-    opacity: 1 !important;
+    width: 820px;
 }
 
 header {
-    color: #b8b4a9;
+    color: #474642;
     font-size: 1.7em;
     line-height: 1.4em;
     margin: 0 0 25px;
@@ -160,7 +136,7 @@ h3 {
 
 #matt-photo {
     border: 2px solid #302f2c;
-    box-shadow: 0 0 7px #000;
+    box-shadow: 0 0 7px #fff;
     float: left;
     margin: 0 30px 0 0;
     padding: 2px;
