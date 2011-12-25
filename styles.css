@@ -108,8 +108,8 @@ a {
     background: #f3f3f3;
     margin: 2px 0 0 1px;
     padding: 10px 0 15px 20px;
-    position: fixed;
-    top: 300px;
+    position: absolute;
+    top: 110px;
     transition: all 400ms linear;
     -moz-transition: all 400ms linear;
     -o-transition: all 400ms linear;
