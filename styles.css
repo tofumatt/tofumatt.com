@@ -25,6 +25,12 @@ body {
     text-shadow: 1px 1px 0 #fff;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-image: url(bg@2x.jpg);
+    }
+}
+
 ::selection {
     background: none;
 }
