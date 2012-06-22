@@ -18,7 +18,7 @@ small {font-size: .8em;}
 body {
     background: #f3f3f3 url(bg.jpg) 50% 25px no-repeat;
     color: #141413;
-    font-family: Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
     font-size: 1.4em;
     line-height: 1.3em;
     padding: 190px 0 1em;
@@ -136,7 +136,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1em;
     margin-bottom: 40px;
 }
 
@@ -154,7 +154,7 @@ h3 {
 
 #content p {
     line-height: 1.25em;
-    margin: 0 15% 7.5px 0;
+    margin: 0 0 15px 0;
 }
 
 #contact {
@@ -231,7 +231,7 @@ h3 {
         background-image: none;
         overflow-x: hidden;
         padding-top: 0;
-        width: 320px;
+        width: 315px;
     }
 
     header {
@@ -242,11 +242,15 @@ h3 {
 
     h2, h3 {
         font-size: .775em;
-        line-height: 2em;
+        line-height: 1.5em;
     }
 
     h2 a, h3 a {
         font-size: 1em;
+    }
+
+    #content p {
+        margin: -15px 10px 0 0;
     }
 
     #matt-photo {
