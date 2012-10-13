@@ -28,7 +28,7 @@ body {
     min-height: 320px;
     overflow: hidden;
     padding: 0;
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 1px 1px 0 rgba(243, 243, 243, 0.6);
 }
 
 ::selection {
@@ -60,7 +60,7 @@ a {
 
 .section {
     clear: both;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     padding: 1px 3px;
 }
 
@@ -84,17 +84,27 @@ a {
 #page {
     background: rgba(243, 243, 243, .95);
     border: #030303 1px solid;
-    box-shadow: 0 1px 10px #000;
-    margin: 0 20px 30px auto;
-    padding: 6px 9px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    margin: 0 60px 30px auto;
+    padding: 14px 19px 0;
     transition: all 400ms linear;
-    width: 500px;
+    width: 278px;
 }
 
 h1 {
-    color: #474642;
+    color: #676662;
     font-size: 1.6em;
+    font-weight: 200;
     line-height: 1.2em;
+}
+
+h2, h3 {
+    line-height: 1.15em;
+}
+
+#content li:before {
+    color: #b41413;
+    content: '•';
 }
 
 /** Phones, iPods, etc. */
@@ -105,9 +115,9 @@ h1 {
     }
 
     #page {
-        margin: 0 5px;
-        max-width: 500px;
-        padding: 2px;
+        margin: 0 auto 30px 2%;
+        max-width: 278px;
+        padding: 9px;
         width: 83%;
     }
 
@@ -133,6 +143,7 @@ h1 {
     #container {
         background-position: 25% -30px;
     }
+}
 
 @media only screen and (max-width: 480px) {
     #container {
@@ -150,6 +161,7 @@ h1 {
     }
 
     #page {
+        margin-top: 90px;
         width: 75%;
     }
 }
