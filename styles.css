@@ -22,18 +22,13 @@ html {
 body {
     color: #141413;
     font-family: "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
-    font-size: 1.4em;
+    font-size: 14px;
     height: 100%;
     line-height: 1.3em;
+    min-height: 320px;
     overflow: hidden;
     padding: 0;
     text-shadow: 1px 1px 0 #fff;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background-image: url(background@2x.jpg);
-    }
 }
 
 ::selection {
@@ -50,9 +45,7 @@ body {
 
 a {
     color: #b41413;
-    display: inline-block;
     outline: none;
-    padding: 2px 1px 0;
     transition: all 250ms ease-in-out;
 }
 
@@ -65,22 +58,6 @@ a {
         color: #040404;
     }
 
-.all-caps {
-    text-transform: uppercase;
-}
-
-.block {
-    display: block;
-}
-
-.clear {
-    clear: both;
-}
-
-.rounded {
-    border-radius: 3px;
-}
-
 .section {
     clear: both;
     margin: 0 0 20px;
@@ -92,9 +69,16 @@ a {
     background-size: cover 100%;
     height: 100%;
     margin: 0 auto;
+    min-height: 320px;
     padding: 5% 0 0;
     position: relative;
     width: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #container {
+        background-image: url(background@2x.jpg);
+    }
 }
 
 #page {
@@ -102,81 +86,70 @@ a {
     border: #030303 1px solid;
     box-shadow: 0 1px 10px #000;
     margin: 0 20px 30px auto;
-    padding: 6px 9px;
+    padding: 6px 9px 0;
     transition: all 400ms linear;
-    width: 620px;
+    width: 500px;
 }
 
-header {
+h1 {
     color: #474642;
-    font-size: 1.5em;
-    line-height: 1.4em;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0 0 .125em;
-}
-
-h3 {
-    font-size: 1em;
+    font-size: 1.6em;
     line-height: 1.2em;
-}
-
-#content {
-    font-size: .7em;
-}
-
-#content p {
-    line-height: 1.25em;
-}
-
-#contact {
-    font-size: 1.1em;
-    margin-bottom: 0;
-}
-
-#contact li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#contact a {
-    margin: 2.5px 0 0 0;
-    padding: 0;
 }
 
 /** Phones, iPods, etc. */
 @media only screen and (max-width: 790px) {
     #container {
-        background-position: 30% -30px;
+        background-position: 10% -30px;
+        padding: 2% 0 0;
     }
 
     #page {
-        bottom: 10%;
-        font-size: 16px;
         margin: 0 5px;
+        max-width: 500px;
         padding: 2px;
-        position: absolute;
-        width: auto;
+        width: 83%;
     }
 
     h1 {
-        font-size: .65em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    #contact li {
-        display: block;
-        margin-right: 0;
+        font-size: 1.5em;
+        line-height: 1.15em;
     }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 720px) {
     #container {
-        background-position: 40% -30px;
+        background-position: 15% -30px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    #container {
+        background-position: 20% -30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        background-position: 25% -30px;
+    }
+
+@media only screen and (max-width: 480px) {
+    #container {
+        background-position: 30% -30px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #container {
+        background-position: 37% -30px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #page {
+        width: 75%;
     }
 }
