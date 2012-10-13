@@ -15,19 +15,24 @@ i,em,cite{font-style:italic;}
 small {font-size: .8em;}
 
 /** Page Styles */
+html {
+    height: 100%;
+}
+
 body {
-    background: #f3f3f3 url(bg.jpg) 50% 25px no-repeat;
     color: #141413;
     font-family: "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
     font-size: 1.4em;
+    height: 100%;
     line-height: 1.3em;
-    padding: 190px 0 1em;
+    overflow: hidden;
+    padding: 0;
     text-shadow: 1px 1px 0 #fff;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url(bg@2x.jpg);
+        background-image: url(background@2x.jpg);
     }
 }
 
@@ -44,14 +49,11 @@ body {
 }
 
 a {
-    color: #b50909;
+    color: #b41413;
     display: inline-block;
     outline: none;
     padding: 2px 1px 0;
     transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-    -webkit-transition: all 250ms ease-in-out;
 }
 
     a:hover, a:focus {
@@ -61,7 +63,6 @@ a {
 
     a:active {
         color: #040404;
-        text-shadow: none;
     }
 
 .all-caps {
@@ -72,62 +73,44 @@ a {
     display: block;
 }
 
-.border {
-    border: #030303 1px solid;
-}
-
-.box-shadow {
-    box-shadow: 3px 3px 6px #fff;
-    -moz-box-shadow: 3px 3px 6px #fff;
-    -webkit-box-shadow: 3px 3px 6px #fff;
-}
-
-.box-shadow-blur {
-    box-shadow: 0 1px 6px #f3f3f3;
-    -moz-box-shadow: 0 1px 6px #f3f3f3;
-    -webkit-box-shadow: 0 1px 6px #f3f3f3;
-}
-
-.box-shadow-soft {
-    box-shadow: 0 1px 6px #333;
-    -moz-box-shadow: 0 1px 6px #333;
-    -webkit-box-shadow: 0 1px 6px #333;
-}
-
 .clear {
     clear: both;
 }
 
 .rounded {
     border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+}
+
+.section {
+    clear: both;
+    margin: 0 0 20px;
+    padding: 1px 3px;
 }
 
 #container {
+    background: #000 url(background.jpg) 90% -10px no-repeat;
+    background-size: cover 100%;
+    height: 100%;
     margin: 0 auto;
+    padding: 5% 0 0;
     position: relative;
-    width: 820px;
+    width: 100%;
 }
 
 #page {
-    background: #f3f3f3;
-    margin: 2px 0 0 1px;
-    padding: 10px 0 15px 20px;
-    position: absolute;
-    top: 110px;
+    background: rgba(243, 243, 243, .95);
+    border: #030303 1px solid;
+    box-shadow: 0 1px 10px #000;
+    margin: 0 20px 30px auto;
+    padding: 6px 9px;
     transition: all 400ms linear;
-    -moz-transition: all 400ms linear;
-    -o-transition: all 400ms linear;
-    -webkit-transition: all 400ms linear;
-    width: 820px;
+    width: 620px;
 }
 
 header {
     color: #474642;
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 1.4em;
-    margin: 0 0 25px;
 }
 
 h2 {
@@ -137,15 +120,7 @@ h2 {
 
 h3 {
     font-size: 1em;
-    margin-bottom: 40px;
-}
-
-#matt-photo {
-    border: 2px solid #302f2c;
-    box-shadow: 0 0 7px #fff;
-    float: left;
-    margin: 0 30px 0 0;
-    padding: 2px;
+    line-height: 1.2em;
 }
 
 #content {
@@ -154,108 +129,54 @@ h3 {
 
 #content p {
     line-height: 1.25em;
-    margin: 0 0 15px 0;
 }
 
 #contact {
     font-size: 1.1em;
-    padding: 25px 0 0;
+    margin-bottom: 0;
 }
 
 #contact li {
-    display: inline;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 #contact a {
-    margin: 2.5px 20px 0 0;
+    margin: 2.5px 0 0 0;
     padding: 0;
 }
 
 /** Phones, iPods, etc. */
-@media only screen and (max-width: 480px) {
-    /* lazy */
-    * {
-        overflow-x: hidden;
+@media only screen and (max-width: 790px) {
+    #container {
+        background-position: 30% -30px;
     }
 
-    body {
-        background-image: none;
-        overflow-x: hidden;
-        padding-top: 0;
-        width: 480px;
+    #page {
+        bottom: 10%;
+        font-size: 16px;
+        margin: 0 5px;
+        padding: 2px;
+        position: absolute;
+        width: auto;
     }
 
-    #container, #page {
-        overflow-x: hidden;
-        padding: 5px;
-        position: relative;
-        width: 100%;
-        top: 0;
+    h1 {
+        font-size: .65em;
     }
 
-    header {
-        font-size: 1em;
-        line-height: 1.2em;
-        margin: 0 0 25px;
-        overflow-x: hidden;
+    h2 {
+        font-size: 1.2em;
     }
 
-    h2, h3 {
-        font-size: .8em;
-        line-height: 2em;
-    }
-
-    h2 a, h3 a {
-        font-size: 1.3em;
-    }
-
-    p {
-        clear: both;
-    }
-
-    #matt-photo {
-        height: 110px;
-        margin: 0 5px 15px 0;
-        width: 110px;
-    }
-
-    #contact a {
+    #contact li {
         display: block;
-        text-align: center;
+        margin-right: 0;
     }
 }
 
-/** Phones, iPods, etc. */
-@media only screen and (max-width: 320px) {
-    body {
-        background-image: none;
-        overflow-x: hidden;
-        padding-top: 0;
-        width: 315px;
-    }
-
-    header {
-        font-size: .7em;
-        line-height: 1.2em;
-        margin: 0 0 12.5px;
-    }
-
-    h2, h3 {
-        font-size: .775em;
-        line-height: 1.5em;
-    }
-
-    h2 a, h3 a {
-        font-size: 1em;
-    }
-
-    #content p {
-        margin: -15px 10px 0 0;
-    }
-
-    #matt-photo {
-        height: 75px;
-        margin: 0 5px 15px 0;
-        width: 75px;
+@media only screen and (max-width: 470px) {
+    #container {
+        background-position: 40% -30px;
     }
 }
