@@ -65,20 +65,14 @@ a {
 }
 
 #container {
-    background: #000 url(background.jpg) 90% -10px no-repeat;
-    background-size: cover 100%;
+    background: #000 url(background.jpg) 0 0 no-repeat;
+    background-size: auto 130%;
     height: 100%;
     margin: 0 auto;
     min-height: 320px;
     padding: 5% 0 0;
     position: relative;
     width: 100%;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    #container {
-        background-image: url(background@2x.jpg);
-    }
 }
 
 #page {
@@ -110,7 +104,6 @@ h2, h3 {
 /** Phones, iPods, etc. */
 @media only screen and (max-width: 790px) {
     #container {
-        background-position: 10% -30px;
         padding: 2% 0 0;
     }
 
@@ -127,41 +120,3 @@ h2, h3 {
     }
 }
 
-@media only screen and (max-width: 720px) {
-    #container {
-        background-position: 15% -30px;
-    }
-}
-
-@media only screen and (max-width: 655px) {
-    #container {
-        background-position: 20% -30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #container {
-        background-position: 25% -30px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #container {
-        background-position: 30% -30px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #container {
-        background-position: 37% -30px;
-    }
-
-    body {
-        font-size: 12px;
-    }
-
-    #page {
-        margin-top: 90px;
-        width: 75%;
-    }
-}
