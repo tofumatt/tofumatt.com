@@ -15,19 +15,16 @@ i,em,cite{font-style:italic;}
 small {font-size: .8em;}
 
 /** Page Styles */
-html {
-    height: 100%;
-}
-
 body {
+    background: #000 url(background.jpg) 0 0 no-repeat fixed;
+    background-size: auto 130%;
     color: #141413;
     font-family: "Helvetica Neue", Helvetica, Arial, "DejaVu Sans", FreeSans, sans-serif;
     font-size: 14px;
-    height: 100%;
     line-height: 1.3em;
     min-height: 320px;
-    overflow: hidden;
-    padding: 0;
+    overflow-x: hidden;
+    padding: 0 0 5px;
     text-shadow: 1px 1px 0 rgba(243, 243, 243, 0.6);
 }
 
@@ -64,25 +61,22 @@ a {
     padding: 1px 3px;
 }
 
-#container {
-    background: #000 url(background.jpg) 0 0 no-repeat;
-    background-size: auto 130%;
-    height: 100%;
-    margin: 0 auto;
-    min-height: 320px;
-    padding: 5% 0 0;
-    position: relative;
-    width: 100%;
-}
-
 #page {
     background: rgba(243, 243, 243, .95);
     border: #030303 1px solid;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
-    margin: 0 60px 30px auto;
+    margin: 2.5% 1% 2.5%;
+    max-width: 300px;
     padding: 14px 19px 0;
     transition: all 400ms linear;
-    width: 278px;
+}
+
+#mugshot {
+    border: #030303 1px solid;
+    display: inline-block;
+    margin: 0 auto 5px;
+    max-width: 250px;
+    width: 95%;
 }
 
 h1 {
@@ -90,6 +84,7 @@ h1 {
     font-size: 1.6em;
     font-weight: 200;
     line-height: 1.2em;
+    min-width: 280px;
 }
 
 h2, h3 {
@@ -100,23 +95,3 @@ h2, h3 {
     color: #b41413;
     content: '•';
 }
-
-/** Phones, iPods, etc. */
-@media only screen and (max-width: 790px) {
-    #container {
-        padding: 2% 0 0;
-    }
-
-    #page {
-        margin: 0 auto 30px 2%;
-        max-width: 278px;
-        padding: 9px;
-        width: 83%;
-    }
-
-    h1 {
-        font-size: 1.5em;
-        line-height: 1.15em;
-    }
-}
-
