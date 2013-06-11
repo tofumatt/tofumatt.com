@@ -28,18 +28,6 @@ body {
     text-shadow: 1px 1px 0 rgba(243, 243, 243, 0.6);
 }
 
-::selection {
-    background: none;
-}
-
-::-moz-selection {
-    background: none;
-}
-
-::-webkit-selection {
-    background: none;
-}
-
 a {
     color: #b41413;
     outline: none;
@@ -52,11 +40,10 @@ a {
     }
 
     a:active {
-        color: #040404;
+        text-decoration: none;
     }
 
 .section {
-    clear: both;
     margin: 0 0 15px;
     padding: 1px 3px;
 }
@@ -91,7 +78,7 @@ h2, h3 {
     line-height: 1.15em;
 }
 
-#content li:before {
+#content li::before {
     color: #b41413;
-    content: '•';
+    content: "•";
 }
