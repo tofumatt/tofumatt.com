@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Face Value Support</title>
+    <meta name="generator" content="iA Writer for Mac 1.4 (1.4)" />
+  <link rel="stylesheet" href="/face-value/support.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Face Value</h1>
+      <h2>by <a href="http://lonelyvegan.com">tofumatt</a></h2>
+    </header>
+
+    <section>
+      <p>Face Value is a currency conversion app that does things differently: instead of converting arbitrary amounts it shows you the actual denominations in the country you're visiting. It lets you think in your home currency even with a foreign currency in your pocket.</p>
+
+      <p>Face Value was built by <a href="http://lonelyvegan.com" title="http://lonelyvegan.com">Matthew Riley MacPherson</a> and <a href="http://triggersandsparks.com" title="http://triggersandsparks.com">sarah ✈ semark</a>. Both are remote-working, frequent travellers.</p>
+    </section>
+
+    <section>
+      <h2>Support</h2>
+
+      <p>Face Value is a simple, tested app, but if you find bugs or want to request a feature, you can <a href="mailto:matt@lonelyvegan.com">email Matt</a>. <a href="https://github.com/tofumatt/face-value">Face Value is also open-source</a>, so you're a developer feel free to file issues or send a pull request!</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Face Value is free software. Copyright © 2012-2014 <a href="http://lonelyvegan.com">Matthew Riley MacPherson</a> and <a href="http://triggersandsparks.com">sarah ✈ semark</a>.
+  </footer>
+
+  <script>
+    var metas = document.getElementsByTagName('meta');
+    var i;
+    if (navigator.userAgent.match(/iPhone/i)) {
+      for (i=0; i<metas.length; i++) {
+        if (metas[i].name == "viewport") {
+          metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+        }
+      }
+      document.addEventListener("gesturestart", gestureStart, false);
+    }
+    function gestureStart() {
+      for (i=0; i<metas.length; i++) {
+        if (metas[i].name == "viewport") {
+          metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
