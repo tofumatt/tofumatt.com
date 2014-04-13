@@ -1,3 +1,3 @@
-# lonelyvegan.com
+# [tofumatt.com](http://tofumatt.com/)
 
-This is my homepage — it's about me and stuff.
+This is my homepage. It's about me and stuff.
