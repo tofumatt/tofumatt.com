@@ -19,7 +19,7 @@ a {
 a:hover {
   color: #bf4d28;
 }
-strong {
+strong, dt, dt a {
   font-weight: bolder;
   color: #bf4d28;
 }
@@ -117,9 +117,13 @@ body .content {
   text-transform: uppercase;
 }
 .content p,
-.content ul {
+.content ul,
+.content dl {
   font-size: 1.3em;
   margin: .25em 0 1.25em 0;
+}
+.content dd {
+  margin-bottom: .625em;
 }
 .content p.break {
   font-size: 1.1em;
