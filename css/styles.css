@@ -20,7 +20,7 @@ a:hover {
   color: #bf4d28;
 }
 strong, dt, dt a {
-  font-weight: bolder;
+  font-weight: 600;
   color: #bf4d28;
 }
 em {
