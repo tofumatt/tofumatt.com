@@ -8,13 +8,14 @@
         content="Information about Matt, a software developer in Montreal.">
 
   <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
   <header id="top">
     <div>
-      <img src="/images/matt-tongue-1000.jpg" class="photo"
+      <img src="/images/matt.jpg" class="photo"
            alt="Photo of a dork.">
 
       <h1>Hi, Internet!</h1>
@@ -42,14 +43,22 @@
     <h2>My work</h2>
 
     <dl>
-      <dt><a href="https://github.com/mozilla/high-fidelity">High Fidelity</a></dt>
-      <dd>HTML5 Podcasts app with offline support. Available as an <a href="https://marketplace.firefox.com/app/podcasts">Open Web App</a> on Firefox OS.</dd>
-      <dt><a href="https://itunes.apple.com/au/app/face-value-understanding-foreign/id854093562?mt=8">Face Value</a></dt>
-      <dd>An iOS app that shows you the value of cash in the country you&rsquo;re visiting. <a href="https://itunes.apple.com/app/face-value-understanding-foreign/id854093562?mt=8">Free on the App Store</a>, and also available as an <a href="https://marketplace.firefox.com/app/face-value">Open Web App</a> or simply a <a href="http://facevalueapp.com/">web app</a>.</dd>
-      <dt><a href="http://mozilla.github.io/localForage">localForage</a></dt>
-      <dd>A simple JavaScript API for asynchonous offline storage in modern web browsers. Supports IE 8+, ES6 Promises, and is used in production in the lightweight, offline version of the <a href="https://marketplace.firefox.com/">Firefox Marketplace</a>.</dd>
-      <dt><a href="http://words.tofumatt.com/">Strongly Typed</a></dt>
-      <dd>I <a href="http://words.tofumatt.com/">have a blog</a> where I write about development, motorcycles, and probably other things.</dd>
+      <div class="list-container">
+        <dt id="high-fidelity"><a href="https://marketplace.firefox.com/app/podcasts">High Fidelity</a> <a href="https://github.com/mozilla/high-fidelity" class="github"><i class="fa fa-github"></i></a></dt>
+        <dd>HTML5 Podcasts app with offline support. Available as an <a href="https://marketplace.firefox.com/app/podcasts">Open Web App</a> on Firefox OS.</dd>
+      </div>
+      <div class="list-container">
+        <dt id="face-value"><a href="https://itunes.apple.com/au/app/face-value-understanding-foreign/id854093562?mt=8">Face Value</a> <a href="https://github.com/tofumatt/face-value/" class="github"><i class="fa fa-github"></i></a></dt>
+        <dd>Cash-based currency converter. <a href="https://itunes.apple.com/app/face-value-understanding-foreign/id854093562?mt=8">Free on the App Store</a>, as an <a href="https://marketplace.firefox.com/app/face-value">Open Web App</a>, or simply a <a href="http://facevalueapp.com/">web app</a>.</dd>
+      </div>
+      <div class="list-container">
+        <dt id="fog-burner"><a href="http://fogburner.tofumatt.com/">Fog Burner</a> <a href="https://github.com/tofumatt/FogBurner/" class="github"><i class="fa fa-github"></i></a></dt>
+        <dd>A Mac menubar app that keeps your display from sleeping.</dd>
+      </div>
+      <div class="list-container">
+        <dt id="code"><a href="http://mozilla.github.io/localForage">localForage</a> <a href="https://github.com/mozilla/localForage" class="github"><i class="fa fa-github"></i></a></dt>
+        <dd>Offline storage in JavaScript, improved.</dd>
+      </div>
     </dl>
 
     <h2>Get in touch</h2>
