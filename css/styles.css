@@ -235,6 +235,10 @@ hr,
     width: 50%;
   }
 
+  .list-container:nth-of-type(odd) {
+    clear: both;
+  }
+
   dt::before {
     background: no-repeat 0 0/96px 96px;
     content: "";
@@ -245,8 +249,14 @@ hr,
     width: 96px;
   }
 
+  #around::before {
+    background-image: url(../images/around.png);
+  }
   #code::before {
     background-image: url(../images/code.png);
+  }
+  #conference-katamari::before {
+    background-image: url(../images/conference-katamari.png);
   }
   #face-value::before {
     background-image: url(../images/face-value.png);
