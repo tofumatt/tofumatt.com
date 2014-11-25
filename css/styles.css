@@ -180,11 +180,6 @@ body .content {
   font-size: 1.3em;
   margin: .25em 0 1.25em 0;
 }
-.content dl::after {
-  clear: both;
-  content: "";
-  display: block;
-}
 .content dd {
   margin-bottom: .625em;
 }
@@ -226,47 +221,6 @@ hr,
   -moz-transform: rotate(358deg);
   -o-transform: rotate(358deg);
   -ms-transform: rotate(358deg);
-}
-@media screen and (min-width: 480px) {
-  .list-container {
-    box-sizing: border-box;
-    float: left;
-    padding: 0 .5em .5em 0;
-    width: 50%;
-  }
-
-  .list-container:nth-of-type(odd) {
-    clear: both;
-  }
-
-  dt::before {
-    background: no-repeat 0 0/96px 96px;
-    content: "";
-    display: inline-block;
-    float: right;
-    height: 96px;
-    margin: .25em .25em .25em .5em;
-    width: 96px;
-  }
-
-  #around::before {
-    background-image: url(../images/around.png);
-  }
-  #code::before {
-    background-image: url(../images/code.png);
-  }
-  #conference-katamari::before {
-    background-image: url(../images/conference-katamari.png);
-  }
-  #face-value::before {
-    background-image: url(../images/face-value.png);
-  }
-  #fog-burner::before {
-    background-image: url(../images/fog-burner.png);
-  }
-  #high-fidelity::before {
-    background-image: url(../images/high-fidelity.png);
-  }
 }
 @media screen and (max-width: 720px) {
   body {
