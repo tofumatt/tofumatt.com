@@ -73,7 +73,9 @@ a:hover {
 a.github {
   color: #000;
   font-size: 1.25em;
-  margin-left: 16px;
+}
+a.github:hover {
+  color: #bf4d28;
 }
 strong, dt, dt a {
   font-weight: 600;
