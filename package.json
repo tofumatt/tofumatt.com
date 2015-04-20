@@ -1,0 +1,27 @@
+{
+  "name": "tofumatt.com",
+  "private": true,
+  "version": "1.0.0",
+  "description": "My homepage.",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tofumatt/tofumatt.github.io.git"
+  },
+  "author": "tofumatt",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/tofumatt/tofumatt.github.io/issues"
+  },
+  "homepage": "https://github.com/tofumatt/tofumatt.github.io",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-serve": "^0.3.1",
+    "gulp-watch": "^4.2.4"
+  }
+}

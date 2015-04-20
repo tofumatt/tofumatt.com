@@ -1,0 +1,264 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700');
+
+@import 'grid.less';
+@import 'reset.css';
+
+
+// Colours!
+@accent: #a12c1f;
+@mid-tone: #7bc9a9;
+@highlight: #2e6657;
+@neutral-dark: #662f62;
+@neutral-light: #fffafa;
+
+// Typography!
+@body: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+//////////////////////////////
+// FONTS, LAYOUT, AND STYLE //
+//////////////////////////////
+
+.clear() {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+body {
+    background: @neutral-light;
+    color: @neutral-dark;
+    font-family: @body;
+    font-weight: 500;
+    line-height: 2em;
+    padding: 0 0 10em 0;
+    text-align: center;
+}
+
+a {
+    color: @highlight;
+    transition: color 0.4s ease-out 0s;
+
+    &:hover {
+        color: @accent;
+    }
+
+    &.github {
+        color: #000;
+        font-size: 1.25em;
+    }
+}
+
+strong {
+	font-weight: 600;
+	color: @accent;
+}
+
+em {
+    font-style: italic;
+    color: @mid-tone;
+}
+
+#top {
+	background-color: @mid-tone;
+    color: @neutral-light;
+    font-size: 1.5em;
+    margin: 3em auto 1em;
+    text-align: left;
+    width: 100%;
+
+    div {
+    	margin: -3em auto;
+    	max-width: 750px;
+    	padding: 0 10px;
+    }
+
+    &::before {
+        background: @highlight;
+        width: 100%;
+        height: 2.4em;
+        display: block;
+        content: '';
+    }
+
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    h1 {
+        color: @mid-tone;
+        font-family: @body;
+        font-weight: 300;
+        font-size: 1.8em;
+    	line-height: 2em;
+    	margin: 0.25em 0 0 0;
+        position: relative;
+        top: -0.225em;
+    }
+
+    h2 {
+    	color: @neutral-light;
+        font-family: @body;
+        line-height: 1.2em;
+        margin: .6em 0;
+    }
+
+    h4 {
+    	font-family: @body;
+    }
+
+    a {
+        color: @accent;
+        text-decoration: none;
+
+        &:hover {
+            color: @highlight;
+        }
+    }
+}
+
+.content {
+    display: block;
+    float: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: left;
+
+    h2 {
+    	color: @mid-tone;
+        font-family: @body;
+    	font-size: 2.4em;
+        font-weight: 300;
+    	line-height: 1.2em;
+        margin: 2em 0 .5em;
+
+        em {
+    	   font-style: normal;
+        }
+    }
+
+    h3 {
+    	color: @accent;
+    	font-family: @body;
+    	font-size: 1.6em;
+    	line-height: 1.2em;
+        margin: 0 0 1em;
+    }
+
+    p + h3 {
+    	margin-top: 2em;
+    }
+
+    h4 {
+    	color: lighten(@highlight, 25%);
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        line-height: 0;
+        margin: 4em 0 0;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        // Content after the headers should clear the photograph.
+        &::after {
+            .clear();
+            padding: 0 0 1em;
+        }
+    }
+
+    p, ul, dl {
+        font-size: 1.3em;
+        margin: 0.25em 0 1.25em;
+    }
+
+    dt a {
+        color: @accent;
+    }
+
+    dd {
+        margin-bottom: 0.625em;
+    }
+
+    p.break {
+        font-size: 1.1em;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    li {
+        list-style: circle inside;
+    }
+}
+
+hr {
+	background: @mid-tone;
+	border: none;
+    content: "";
+    display: block;
+	margin: 4em auto;
+	max-width: 700px;
+    min-height: 2px;
+}
+
+.photo {
+	background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+    float: left;
+    margin: -0.5em 1em -1em -1.5em;
+    max-height: 270px;
+    padding: 15px;
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+
+    &.second {
+        float: right;
+        max-height: 150px;
+    }
+}
+
+////////////
+// LAYOUT //
+////////////
+
+
+
+@media screen and (max-width: 720px) {
+
+	body {
+		font-size: .9em;
+	}
+
+	#top {
+		margin-top: 0;
+
+        div {
+    		padding-bottom: 5px;
+    	}
+
+    	h1 {
+    		margin-bottom: -.5em;
+    	}
+
+    	h2 {
+    		margin-top: 1em;
+
+    	    span {
+    		    display: none;
+    	    }
+        }
+    }
+
+	body .content {
+		margin-top: 7em;
+	}
+
+    .photo {
+        display: none;
+    }
+}
